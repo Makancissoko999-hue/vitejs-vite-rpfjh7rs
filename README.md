@@ -28,11 +28,13 @@ Mobile-first storefront prototype for a future local-first marketplace in **Mali
 Requires a current Node.js version compatible with Vite 8.
 
 ```bash
-npm ci
+npm install
 npm run dev
 npm run build
 npm run preview
 ```
+
+**Dependency note:** the starter repository's committed `package-lock.json` was out of sync with `package.json` when first checked. Use `npm install` to reconcile dependencies for now. Before production, regenerate and commit a verified lockfile, then restore `npm ci` in CI for deterministic installs.
 
 ## Launch strategy
 
